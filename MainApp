@@ -4,7 +4,7 @@ package basic.dev;
 import java.util.Scanner;
  
  
-public class MainApp {
+public class Ex2 {
  
     public static void main(String[] args) {
     	
@@ -57,16 +57,119 @@ public class MainApp {
      
      System.out.println("  Bai 2b  ");
      
-     long sum = 0;
-    int n1;
-    Scanner sc2 = new Scanner(System.in);
-    do {
-     System.out.println("Nhap n");
-		n1 = sc2.nextInt();
-    }while(n1 <= 0);
-    for(int i = 1; i <= n1; i++) {
-    	sum += i;
+ 
+     int n2b;
+     float tong1=0.0f;
+     Scanner input2 = new Scanner(System.in);
+     n2b=input2.nextInt();
+     for (int i = 1; i <= n2b; i++) {
+     tong1+=(float) 1/i;
+     }
+     System.out.println("S= " + tong1);
+
+     
+//     3*
+     System.out.println("  Bai 3  ");
+     
+     int n3;
+     float tong3=0.0f;
+     Scanner input1 = new Scanner(System.in);
+     n3=input1.nextInt();
+     for (int i = 1; i <= n3; i++) {
+     tong3+=(float) 1/i;
+     }
+     System.out.println("S= " + tong3);
+     if(tong3 % 2 == 0 )  {
+     	System.out.println(tong3 + " la so chan");
+     }else {
+     	System.out.println(tong3 + " la so le");
+}
+//     4*
+     System.out.println("  Bai 4  ");
+     
+     long sum = 1;
+     int n4;
+     Scanner sc4;
+     do {
+         System.out.println("Nhap n");
+         sc = new Scanner(System.in);
+         n = sc.nextInt();
+     }while(n <= 0);
+      
+     for(int i = 1; i <= n; i++) {
+         sum = sum * i;
+     }
+      
+     System.out.println("P= " + sum);
+  
+     if(sum % 2 == 0 )  {
+      	System.out.println(sum + " la so chan");
+      }else {
+      	System.out.println(sum + " la so le");
     }
-         
-    System.out.println("Tong cua chuong trinh la " + (1+(1/2)+(1/3)+(1/sum)));
-}}
+//     5*
+     System.out.println("Bai 5");
+     
+     long sum5 = 1;
+     int n5;
+
+     do {
+         System.out.println("Nhap n");
+         n = sc.nextInt();
+     }while(n <= 0);
+      
+     for(int i = 1; i <= n; i++) {
+         sum5 = sum5 * i;
+     }
+      
+     System.out.println("P= " + sum5);
+
+     
+//     6*
+     System.out.println("Bai 6");
+     
+     System.out.println("Nhap n");
+		int n6;
+		Scanner sc6 = new Scanner(System.in);
+		n6 = sc.nextInt();
+		
+		switch (n6) {
+		case 1: 
+			System.out.println("day la thang moi");
+		    break;
+		case 2: 
+			System.out.println("day la thang hai");
+		    break;
+		case 3: 
+			System.out.println("day la thang ba");
+		    break;
+		case 4: 
+			System.out.println("day la thang tu");
+		    break;
+		case 5: 
+			System.out.println("day la thang nam");
+		    break;
+		case 6: 
+			System.out.println("day la thang sau");
+		    break;
+		case 7: 
+			System.out.println("day la thang bay");
+		    break;
+		case 8: 
+			System.out.println("day la thang tam");
+		    break;
+		case 9: 
+			System.out.println("day la thang chin");
+		    break;
+		case 10: 
+			System.out.println("day la thang muoi");
+		    break;
+		case 11: 
+			System.out.println("day la thang muoi mot");
+		    break;
+		case 12: 
+			System.out.println("day la thang muoi hai");
+		    break;
+		    default:
+		    System.out.println("n ko hop le");
+		}
