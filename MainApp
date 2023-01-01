@@ -21,26 +21,21 @@ public class Ex2 {
         }
     
     	
-//    	System.out.println("Bai 1b");
-//    	
-//    	
-//        long sum = 0;
-//        int n;
-//        Scanner sc;
-//        do {
-//            System.out.println("Nhap n = ");
-//            sc = new Scanner(System.in);
-//            n = sc.nextInt();
-//        }while(n <= 0);
-//         
-//        for(int i = 1; i <= n; i++) {
-//            sum += i;
-//        }
-//         
-//        System.out.println("Tong cac so tu 1 den n la " + sum);
-//        sc.close();
-//    }
-//}
+   	System.out.println("Bai 1b");
+    	
+    	
+                int n;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap n");
+		n = sc.nextInt();
+		int ketQua = 0;
+		for (int i = 1; i <= n; i++)  {
+			ketQua = ketQua + i;
+		}
+		System.out.println("Tong tu 1 den " + n + " la " + ketQua);
+	}
+
+
 //        2*
     System.out.println("Bai 2a");
 
@@ -87,25 +82,23 @@ public class Ex2 {
 //     4*
      System.out.println("  Bai 4  ");
      
-     long sum = 1;
-     int n4;
-     Scanner sc4;
-     do {
-         System.out.println("Nhap n");
-         sc = new Scanner(System.in);
-         n = sc.nextInt();
-     }while(n <= 0);
-      
-     for(int i = 1; i <= n; i++) {
-         sum = sum * i;
-     }
-      
-     System.out.println("P= " + sum);
+     int n;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap n");
+		n = sc.nextInt();
+		int ketQua = 1;
+		for (int i = 1; i <= n; i++)  {
+			ketQua = ketQua * i;
+		}
+		System.out.println("Giai thua cua " + n + " la " + ketQua);
+	
+
+
   
-     if(sum % 2 == 0 )  {
-      	System.out.println(sum + " la so chan");
+     if(ketQua % 2 == 0 )  {
+      	System.out.println(ketQua + " la so chan");
       }else {
-      	System.out.println(sum + " la so le");
+      	System.out.println(ketQua + " la so le");
     }
 //     5*
      System.out.println("Bai 5");
